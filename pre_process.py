@@ -41,7 +41,7 @@ def create_folder(folder_name):
     except FileExistsError:
         pass
 #===============================
-def pre_processor(test_corpora_dir,store_processed=False):
+def pre_processor(test_corpora_dir,store_processed=False)->None:
     '''
     Input:
         test_corpora_dir: dir path that stores corpora files
@@ -68,7 +68,9 @@ def pre_processor(test_corpora_dir,store_processed=False):
     """main processing with sub steps explained"""
     
     for i,file in enumerate(os.listdir(test_corpora_dir)):
-
+        if i%100==0:
+            print(f'Processed file no -- {i+1}')
+            
         doc_id=file.split('.')[0]
         # indexed_files[doc_id]=file
 
