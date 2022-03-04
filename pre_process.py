@@ -5,7 +5,6 @@ meta info:
 """
 #===============================
 # import every module from project imports that is used
-from pydoc import doc
 from imports import *
 #===============================
 # to keep these words unchangable we use python set
@@ -42,13 +41,16 @@ def create_folder(folder_name):
     except FileExistsError:
         pass
 #===============================
-def pre_processor(test_corpora_dir,store_processed=True):
+def pre_processor(test_corpora_dir,store_processed=False):
     '''
     Input:
-        dir path that stores corpora files
-        bool to indicate whether to store files or not; default is true
+        test_corpora_dir: dir path that stores corpora files
+        store_processed: bool to indicate whether to store files or not; default is false
+    Output:
+        inverted-index-data.txt: stores postings lists in dict format
+        index-data.txt: stores document unique word count and document length
     '''
-
+    
     """init variables that are used"""
     # indexed_files={} # to store doc_id and their file_names
     inverted_index_dict={} # rather than using linked list we use easy to understand dicts
@@ -106,11 +108,14 @@ def pre_processor(test_corpora_dir,store_processed=True):
         # TODO: what about special cases like UP > up or PIN > pin 
         # TODO: incase of tf-idf stopwords do not matter. 
         # for this should keep them? for cases "like to be or not to be"
-        word_tokens=[porter.stem(word.lower()) for word in word_tokens if len(word)>1 and word not in Stopwords]
+        word_tokens=[porter.stem(word.lower()) for word in word_tokens if len(word)>1] # and word not in Stopwords]
         # print(len(word_tokens))
 
         tmp_word_freq_of_doc=get_unique_word_freq(word_tokens)
-        unique_words_in_doc[doc_id]=tmp_word_freq_of_doc
+        unique_words_in_doc[doc_id]={
+            'unique_terms_count':len(tmp_word_freq_of_doc),
+            'dl':sum(tmp_word_freq_of_doc.values())
+        }
 
         for word in tmp_word_freq_of_doc.keys():
             does_word_exists=inverted_index_dict.get(word,None)
