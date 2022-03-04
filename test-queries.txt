@@ -1,0 +1,5 @@
+Q01    what 
+Q02    computer science
+Q03    javascript python
+Q04    python
+Q05    ramayana
