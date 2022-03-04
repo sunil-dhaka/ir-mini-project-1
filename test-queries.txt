@@ -1,5 +1,20 @@
-Q01    what 
-Q02    computer science
-Q03    javascript python
-Q04    python
-Q05    ramayana
+Q01    what is information retrieval
+Q02    Ram and Krishna children stroy 
+Q03    capitals of India
+Q04    image based deep learning
+Q05    difference between deep learning and machine learning 
+Q06    what are the rules of poker
+Q07    human anatomy different parts
+Q08    various fields of medicine
+Q09    Pythagoras theorm in mathematics
+Q10    message of mahabharata
+Q11    best Indian fiction writers
+Q12    backpropogation in neural networks
+Q13    object oriented programming
+Q14    war between India and Pakistan
+Q15    uses and side effects of paracetamol tablets
+Q16    information about human reproductive system
+Q17    best football players of all time
+Q18    Indian mythology and culture
+Q19    greek mythology family tree
+Q20    ramayana the legend of prince rama
