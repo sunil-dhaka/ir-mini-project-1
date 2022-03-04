@@ -1,5 +1,7 @@
 """
-
+meta info:
+    simplest boolean search query ir system using inverted index and postings lists
+    @sunil-dhaka
 """
 #===============================
 # import every module from project imports that is used
@@ -17,6 +19,7 @@ def boolean_query_system(query_input,test_corpora_dir,inverted_index_data,top_k=
     Input:
         boolean query to search\\
         corpus directory\\
+        inverted index data from pre-processin\\
         top k many scored files to be retunred
     Output:
         top k many scored file's names are retunred
@@ -101,8 +104,7 @@ def boolean_query_system(query_input,test_corpora_dir,inverted_index_data,top_k=
         return query_files_result[:top_k]
     except IndexError:
         return None
-
-    
+#============================== 
 if __name__=='__main__':
     if len(sys.argv)>3:
         data_dir_name=sys.argv[1]
@@ -125,7 +127,7 @@ if __name__=='__main__':
         print('Some files that are relevent:')
         for file in relevent_files:
             print(file)
-
+#==============================
 """
 TODO[DONE]: for bi-word queries need to have inverted index of bi-words; that needs to be done in pre-processing step
     - one solution is to introduce 'and' between words that don't have connecting boolean words; this way we take intersection
