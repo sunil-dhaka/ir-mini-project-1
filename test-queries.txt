@@ -1,20 +1,20 @@
-Q01    what is information retrieval
-Q02    Ram and Krishna children stroy 
-Q03    capitals of India
-Q04    image based deep learning
-Q05    difference between deep learning and machine learning 
-Q06    what are the rules of poker
-Q07    human anatomy different parts
-Q08    various fields of medicine
-Q09    Pythagoras theorm in mathematics
-Q10    message of mahabharata
-Q11    best Indian fiction writers
-Q12    backpropogation in neural networks
-Q13    object oriented programming
-Q14    war between India and Pakistan
-Q15    uses and side effects of paracetamol tablets
-Q16    information about human reproductive system
-Q17    best football players of all time
-Q18    Indian mythology and culture
-Q19    greek mythology family tree
-Q20    ramayana the legend of prince rama
+Q01    hill stations in India 
+Q02    novels and stories written by Tolkien 
+Q03    battle of mahabharata between Pandavas and Kauravas
+Q04    characteristics of different types of personality disorders
+Q05    different sorting algorithms in computer science 
+Q06    applications of vector space in engineering
+Q07    human anatomy and physiology
+Q08    drugs and treatments for Covid virus
+Q09    incompleteness theorms in mathematics
+Q10    UNESCO world heritage sites in India
+Q11    best physiological thrillers in english
+Q12    sexual addictions and disorders in adults
+Q13    object oriented programming languages
+Q14    East India Company and British Raj history in India
+Q15    world records in national championships and Olympic games
+Q16    anatomy of human reproductive organs
+Q17    scientific nonprofit organizations in America
+Q18    Indian mythology and scriptures
+Q19    famous places for tourists to visit in UttarPradesh
+Q20    battle between Lord Rama and Ravana to save Seetha
