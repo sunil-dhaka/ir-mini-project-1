@@ -15,14 +15,14 @@ Stopwords = set(stopwords.words('english'))
 # create stemmer instance
 porter=PorterStemmer()
 #===============================
-def boolean_system(query_file,test_corpora_dir,inverted_index_data,index_data,output_file_path='qrels-boolean.txt',top_k=5,pre_process=False)->None:
+def boolean_system(query_file,test_corpora_dir,inverted_index_json_file='inverted-index-data.json',index_json_file='index-data.json',output_file_path='qrels-boolean.txt',top_k=5,pre_process=False)->None:
     # TODO: how to get scores for boolean ir system
     '''
     Input:
         query_file: file that contains query free texts\\
         test_corpora_dir: corpus directory\\
-        inverted_index_data: inverted index data from pre-processing\\
-        index_data: index data from pre-processing\\ 
+        inverted_index_json_file: inverted index data from pre-processing\\
+        index_json_file: index data from pre-processing\\ 
         output_file_path: path where to store output qrels\\
         top_k: to return top k relevent docs -- default is 5\\
         pre_process: if want to re-run pre-processing steps that creats inverted index -- default to False(for good) 
@@ -30,17 +30,24 @@ def boolean_system(query_file,test_corpora_dir,inverted_index_data,index_data,ou
         return: file is stored in qurels format
     '''
 
+    # NOTE: if you have half hour then only set pre_process to True and pre_processor will update inverted_index_data
+    # it is set to False by default for that only reason
+    if pre_process:
+        pre_processor(test_corpora_dir)
+
+
+    with open(inverted_index_json_file,'r') as file:
+        inverted_index_data=json.load(file)
+    with open(index_json_file,'r') as file:
+        index_data=json.load(file)
+
     # NOTE: here I have assumed that queries are in Qid<TAB>query-free-text format; meaning TAB seperated
 
     with open(query_file,'r') as file:
         query_lines=file.readlines()
         query_inputs=[query.split('    ')[1].strip() for query in query_lines]
     total_queries=len(query_inputs)
-    # NOTE: if you have half hour then only set pre_process to True and pre_processor will update inverted_index_data
-    # it is set to False by default for that only reason
-    if pre_process:
-        pre_processor(test_corpora_dir)
-
+    
     files=os.listdir(test_corpora_dir)
     files_ids=[file.split('.')[0] for file in files]
     total_documents=len(files)
@@ -110,22 +117,15 @@ def boolean_system(query_file,test_corpora_dir,inverted_index_data,index_data,ou
         file.write('\n'.join(qrels_list))
 #============================== 
 if __name__=='__main__':
-    if len(sys.argv)>4:
+    if len(sys.argv)>2:
         query_input=sys.argv[1]
         data_dir_name=sys.argv[2]
-        inverted_index_json_file=sys.argv[3]
-        index_json_file=sys.argv[4]
     else:
-        print('Input format: <query_inputs_file> <data_dir_name> <inverted_index_json_file> <index_json_file>')
+        print('Input format: <query_inputs_file> <data_dir_name>')
         sys.exit()
 
-    with open(inverted_index_json_file,'r') as file:
-        inverted_index_data=json.load(file)
-    with open(index_json_file,'r') as file:
-        index_data=json.load(file)
-    
     tic=time()
-    boolean_system(query_input,data_dir_name,inverted_index_data,index_data)
+    boolean_system(query_input,data_dir_name)
     toc=time()
     print(f'Time taken {round(toc-tic)} secs.')
 #==============================
