@@ -1,0 +1,6 @@
+- [Basic example of tokenization in python](https://stackoverflow.com/questions/12703842/how-to-tokenize-natural-english-text-in-an-input-file-in-python)
+- [Stemming and Lemmatization in python](https://www.datacamp.com/community/tutorials/stemming-lemmatization-python)
+- [linked list recap](https://www.programiz.com/dsa/linked-list)
+- [boolean ir system](https://medium.com/voice-tech-podcast/e0ea9bf57f76)
+- tuning parameters is one task that needs to be taken care of; and ml will be used here
+- how to get relevance from scores
