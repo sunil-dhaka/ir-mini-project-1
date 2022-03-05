@@ -1,0 +1,20 @@
+Q01    hill stations in India 
+Q02    novels and stories written by Tolkien 
+Q03    battle of mahabharata between Pandavas and Kauravas
+Q04    characteristics of different types of personality disorders
+Q05    different sorting algorithms in computer science 
+Q06    applications of vector space in engineering
+Q07    human anatomy and physiology
+Q08    drugs and treatments for Covid virus
+Q09    incompleteness theorms in mathematics
+Q10    UNESCO world heritage sites in India
+Q11    best physiological thrillers in english
+Q12    sexual addictions and disorders in adults
+Q13    object oriented programming languages
+Q14    East India Company and British Raj history in India
+Q15    world records in national championships and Olympic games
+Q16    anatomy of human reproductive organs
+Q17    scientific nonprofit organizations in America
+Q18    Indian mythology and scriptures
+Q19    famous places for tourists to visit in UttarPradesh
+Q20    battle between Lord Rama and Ravana to save Seetha
