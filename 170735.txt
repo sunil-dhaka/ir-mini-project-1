@@ -1,0 +1,40 @@
+Q01    "Asiatic flu"
+Q02    cloud computing
+Q03    COVID-19 vaccine candidate List.
+Q04    Bhagavad Gita
+Q05    car driving data and bit complememt
+Q06    indian cricket
+Q07    Prime numbers
+Q08    Pandava yudhishthira
+Q09    UDYOGA PARVA
+Q10    What is Alopecia areata
+Q11    Define Static and Dynamic polymorphism?
+Q12    Disease caused by microorganisms.
+Q13    What is the most venomous snake on earth? Be aware of the snakes!!
+Q14    1 Different Worlds 29 April 1999 The first episode covers the early attempts at space travel and the development of rocket technology
+Q15    Database
+Q16    wikipedia and program
+Q17    Hierarchical clustering and its different usage in machine learning and data science
+Q18    perfect getaway destination
+Q19    Who is larry page
+Q20    Concurrent Versions System 
+Q21    The sun, however, went down, but prince Duryodhana taking Karna's hand led him out of the arena lighted with countless lamps.
+Q22    Who were the Nagas?
+Q23    Mizoram University and a number of public and private schools
+Q24    Details of fiction and metafiction books, novels and movies
+Q25    american literature, novel and books
+Q26    Rama Ravana war
+Q27    lattice in set theory explanation
+Q28    Peaks of Himalayan Range.
+Q29    heisenberg uncertainty
+Q30    telling of a story in the grammatical first persons
+Q31    ChurchaTuring thesis
+Q32    modern reader-response criticism
+Q33    heart disease cardiomyopathy
+Q34    object oriented programming
+Q35    Object files can be linked to form an executable file
+Q36    who protect german border , maritime , shipping 
+Q37    Operating System
+Q38    best books to read now
+Q39    Multilinear subspace learning
+Q40    What is NFPA 704
